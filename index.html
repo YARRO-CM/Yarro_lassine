@@ -1,0 +1,622 @@
+<!-- 
+  Portfolio template based on work by Adil Shamim
+  https://github.com/adilshamim8 - Used under MIT License
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Lassine Yarro – Élève Ingénieur en Génie Rural. Explorez mes projets en gestion de l'eau, infrastructures et environnement.">
+    <title>Lassine Yarro - Élève Ingénieur en Génie Rural</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="image/profile.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="shortcut icon" href="image/profile.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Modern Features Structure -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <div class="loader-text">LY</div>
+        </div>
+    </div>
+    <div id="scroll-progress" class="scroll-progress"></div>
+    <div id="toast-container" class="toast-container"></div>
+    <div class="custom-cursor"></div>
+
+    <a href="#home" class="skip-link"
+        style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main">
+        <div class="container">
+            <div class="logo">
+                <h1 id="logo-text">LASSINE YARRO</h1>
+            </div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" aria-controls="primary-navigation"
+                aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation" role="menubar">
+                <li><a href="#home" class="nav-link active">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="stages.html" class="nav-link">Stages</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode" title="Toggle theme">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="animate-text">Bonjour, je suis <span class="highlight">Lassine Yarro</span></h1>
+                <h2 class="animate-text delay-1">Je suis un <span id="typing-text"></span></h2>
+                <p class="animate-text delay-2">Élève Ingénieur en Génie Rural à l'IAV Hassan II, spécialisé en Eau,
+                    Infrastructures et Environnement.</p>
+                <div class="hero-buttons animate-text delay-3">
+                    <a href="#contact" class="btn primary-btn">Me Contacter</a>
+                    <a href="#projects" class="btn secondary-btn">Mes Projets</a>
+                </div>
+                <div class="social-icons animate-text delay-4">
+                    <a href="https://www.linkedin.com/in/lassine-yarro%F0%9F%91%B7%F0%9F%8F%BF%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%92%A7-357050259/"
+                        class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i
+                            class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="mailto:lassine.yarro@iav.ac.ma" class="social-link" aria-label="Email"><i
+                            class="fas fa-envelope" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="hero-image animate-text delay-2" data-aos="fade-left" data-aos-duration="1000">
+                <div class="profile-container">
+                    <div class="profile-circle">
+                        <img src="image/profile.jpg" alt="Portrait of LASSINE YARRO" id="profile-img" width="340"
+                            height="340" decoding="async" fetchpriority="high">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>À Propos</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="800">
+                    <h3>Apprenez à me connaître !</h3>
+                    <p><span class="highlight">Lassine Yarro</span> est un <span class="highlight">Élève Ingénieur en
+                            Génie Rural</span> à l'Institut Agronomique et Vétérinaire Hassan II (IAV Hassan II),
+                        spécialisé en <span class="highlight">Eau, Infrastructures et Environnement</span>.</p>
+                    <p>Passionné par la gestion intégrée des ressources en eau (GIRE), je combine des compétences
+                        techniques solides en hydraulique, génie civil et SIG avec une curiosité pour l'intelligence
+                        artificielle appliquée au secteur de l'eau.</p>
+                    <p>Actuellement en 3ème année de cycle ingénieur, j'ai réalisé plusieurs stages significatifs dans
+                        des bureaux d'études et des entreprises agricoles, me permettant d'acquérir une expérience
+                        pratique en planification hydraulique, modélisation de réseaux et analyse environnementale.</p>
+                    <div class="about-buttons">
+                        <a href="#" class="btn primary-btn" id="download-cv">Mon CV</a>
+                    </div>
+                </div>
+                <div class="about-details" data-aos="fade-left" data-aos-duration="800">
+                    <div class="detail-item">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>
+                            <h4>Éducation</h4>
+                            <p>Cycle Ingénieur en Génie Rural,
+                                <br>IAV Hassan II, Rabat (2023–Présent)
+                            </p>
+                            <p>Cycle Préparatoire (APESA),
+                                <br>IAV Hassan II, Rabat (2021–2023)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <h4>Expérience</h4>
+                            <p>Stages chez NOVEC et PYTHOPROD S.A (AEP, GIRE, Diagnostics agricoles)</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Rabat, Maroc</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-language"></i>
+                        <div>
+                            <h4>Langues</h4>
+                            <p>Français, Anglais, Bambara & Bozo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--   hena fin weslaltiii -->
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Mes Projets</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="geo">Génie Rural & SIG</button>
+                <button class="filter-btn" data-filter="structure">Bâtiment & Structure</button>
+                <button class="filter-btn" data-filter="irrigation">Irrigation</button>
+                <button class="filter-btn" data-filter="energy">Énergies</button>
+                <button class="filter-btn" data-filter="ai">IA & Business</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project items will be dynamically generated with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Mes Compétences</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="skills-container">
+                <!-- SIG & Hydraulique -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>SIG & Hydraulique</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-globe-africa"></i></div>
+                            <h4>ArcGIS Pro / QGIS</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percentage">Avancé</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-tint"></i></div>
+                            <h4>EPANET / COVADIS</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage">Avancé</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                            <h4>GMS / Modflow</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percentage">Intermédiaire</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Génie Civil & Infrastructure -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Génie Civil & Infrastructure</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-drafting-compass"></i></div>
+                            <h4>AutoCAD / Revit</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage">Avancé</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-building"></i></div>
+                            <h4>Robot Structural Analysis</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percentage">Intermédiaire</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programmation & Data -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Programmation & Data</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <h4>Python (ML & Analyse)</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage">Intermédiaire</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+                            <h4>Fortran / SPSS / Excel</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percentage">Intermédiaire</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-sun"></i></div>
+                            <h4>RETScreen (Solaire)</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                            <span class="skill-percentage">Intermédiaire</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compétences Professionnelles -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <h3>Compétences Professionnelles</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="Communication">
+                            <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                            <h4>Communication</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item" data-skill="Travail d'Équipe">
+                            <div class="skill-icon"><i class="fas fa-users"></i></div>
+                            <h4>Travail d'Équipe</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-item" data-skill="Résolution de Problèmes">
+                            <div class="skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+                            <h4>Résolution de Problèmes</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 88%"></div>
+                            </div>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-item" data-skill="Créativité">
+                            <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h4>Créativité</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 92%"></div>
+                            </div>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <!-- <h2>My Tech Stack</h2> -->
+                <!-- <div class="underline"></div> -->
+            </div>
+            <!-- <div class="tech-categories">
+                    <div class="tech-category" data-aos="fade-up">
+                        <h3>Programming Languages</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R">
+                                <span>R</span>
+                            </div> -->
+            <!-- <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div> -->
+            <!-- <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                                <span>Java</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+            <!-- <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Machine Learning / AI</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                                <span>TensorFlow</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+                                <span>PyTorch</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn">
+                                <span>Scikit-learn</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+                                <span>NumPy</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                                <span>Pandas</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn">
+                                <span>Seaborn</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib">
+                                <span>Matplotlib</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+            <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
+                <h3>Tools & Platforms</h3>
+                <div class="tech-grid">
+                    <div class="tech-item" data-tilt>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        <span>Git</span>
+                    </div>
+                    <!-- <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                                <span>Docker</span>
+                            </div> -->
+                    <div class="tech-item" data-tilt>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"
+                            alt="Jupyter">
+                        <span>Jupyter</span>
+                    </div>
+                    <div class="tech-item" data-tilt>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                            alt="VS Code">
+                        <span>VS Code</span>
+                    </div>
+                    <!-- <div class="tech-item" data-tilt>
+                                <img src="https://cdn.brandfetch.io/cursor.com/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="Cursor">
+                                <span>Cursor</span>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section" style="background: var(--background-secondary);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Licences & <span class="highlight">Certifications</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="certifications-grid">
+                <!-- Cert 1: HP LIFE AI -->
+                <div class="cert-card card-glass" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                    <div class="cert-info">
+                        <h3>L'IA pour les débutants</h3>
+                        <p class="cert-org">HP LIFE &middot; Févr. 2025</p>
+                        <div class="cert-skills">
+                            <span class="tag">IA</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 2: African Cities Lab -->
+                <div class="cert-card card-glass" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-icon"><i class="fas fa-solar-panel"></i></div>
+                    <div class="cert-info">
+                        <h3>Solaire Photovoltaïque & Développement Urbain</h3>
+                        <p class="cert-org">African Cities Lab &middot; Janv. 2025</p>
+                        <div class="cert-skills">
+                            <span class="tag">Énergie Solaire</span>
+                            <span class="tag">Urbanisme</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 3: HP LIFE Data -->
+                <div class="cert-card card-glass" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
+                    <div class="cert-info">
+                        <h3>Présenter des données</h3>
+                        <p class="cert-org">HP LIFE &middot; Oct. 2024</p>
+                        <div class="cert-skills">
+                            <span class="tag">Data Viz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 4: HP LIFE Emails -->
+                <div class="cert-card card-glass" data-aos="fade-up" data-aos-delay="400">
+                    <div class="cert-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <div class="cert-info">
+                        <h3>Les e-mails professionnels</h3>
+                        <p class="cert-org">HP LIFE &middot; Oct. 2024</p>
+                        <div class="cert-skills">
+                            <span class="tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 5: HP LIFE Comm -->
+                <div class="cert-card card-glass" data-aos="fade-up" data-aos-delay="500">
+                    <div class="cert-icon"><i class="fas fa-comments"></i></div>
+                    <div class="cert-info">
+                        <h3>Communications professionnelles</h3>
+                        <p class="cert-org">HP LIFE &middot; Oct. 2024</p>
+                        <div class="cert-skills">
+                            <span class="tag">Soft Skills</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 6: HP LIFE Presentations -->
+                <div class="cert-card card-glass" data-aos="fade-up" data-aos-delay="600">
+                    <div class="cert-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <div class="cert-info">
+                        <h3>Des présentations efficaces</h3>
+                        <p class="cert-org">HP LIFE &middot; Oct. 2024</p>
+                        <div class="cert-skills">
+                            <span class="tag">Public Speaking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 7: FUN MOOC -->
+                <div class="cert-card card-glass" data-aos="fade-up" data-aos-delay="700">
+                    <div class="cert-icon"><i class="fas fa-gavel"></i></div>
+                    <div class="cert-info">
+                        <h3>Les fondamentaux du marché public</h3>
+                        <p class="cert-org">France Université Numérique &middot; Oct. 2024</p>
+                        <div class="cert-skills">
+                            <span class="tag">Marchés Publics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+                    <h3>Contactez-moi</h3>
+                    <p>N'hésitez pas à me contacter pour toute question ou opportunité professionnelle !</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>lassine.yarro@iav.ac.ma</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localisation</h4>
+                                <p>Rabat, Maroc</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form" style="margin-top: 2rem;">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Votre Nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Votre Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Votre Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Envoyer le Message</button>
+                        <div id="form-status"></div>
+                    </form>
+                </div>
+
+                <!-- Code snippet showcase -->
+                <div class="contact-code" data-aos="fade-left" data-aos-duration="800">
+                    <div class="code-snippet-container">
+                        <div class="code-header">
+                            <span class="code-title">Modèle de Détection de Fuites (EPANET + Python)</span>
+                            <div class="code-actions">
+                                <span class="code-dot red"></span>
+                                <span class="code-dot yellow"></span>
+                                <span class="code-dot green"></span>
+                            </div>
+                        </div>
+                        <pre><code class="language-python">
+ # Optimisation des réseaux avec Python & EPANET
+ import epannet_module as epa
+ from water_ml import LeakDetector
+                            
+ # Chargement du réseau hydraulique
+ network = epa.load_network("reseau_rabat.inp")
+ 
+ # Initialisation du détecteur intelligent
+ detector = LeakDetector(model="RandomForest")
+ detector.train(historical_data="scada_2024.csv")
+                             
+ # Prédiction des zones à risque de fuite
+ leaks = detector.predict(network.current_pressure)
+ for loc in leaks:
+     print(f"Alerte : Fuite probable détectée au nœud {loc.id}")
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Lassine Yarro</h2>
+                </div>
+                <p>Merci d'avoir visité mon site portfolio.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/lassine-yarro%F0%9F%91%B7%F0%9F%8F%BF%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%92%A7-357050259/"
+                        class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i
+                            class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="mailto:lassine.yarro@iav.ac.ma" class="social-link" aria-label="Email"><i
+                            class="fas fa-envelope" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Lassine Yarro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <!-- <script src="ab.js" defer></script> -->
+    <script src="script.js" defer></script>
+    <!-- <script src="chatbot.js" defer></script> -->
+</body>
+
+</html>

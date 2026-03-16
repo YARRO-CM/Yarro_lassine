@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Expériences professionnelles et stages de Lassine Yarro – Élève Ingénieur en Génie Rural.">
+    <title>Stages - Lassine Yarro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="image/profile.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Modern Features Structure -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <div class="loader-text">LY</div>
+        </div>
+    </div>
+    <div id="scroll-progress" class="scroll-progress"></div>
+    <div id="toast-container" class="toast-container"></div>
+
+    <a href="#stages-content" class="skip-link"
+        style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Vers le contenu</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1 id="logo-text">LASSINE YARRO</h1>
+                </a>
+            </div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" aria-controls="primary-navigation"
+                aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation" role="menubar">
+                <li><a href="index.html#home" class="nav-link">Accueil</a></li>
+                <li><a href="index.html#about" class="nav-link">À propos</a></li>
+                <li><a href="stages.html" class="nav-link active">Stages</a></li>
+                <li><a href="index.html#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="index.html#skills" class="nav-link">Compétences</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projets</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode" title="Toggle theme">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero-subpage">
+        <div id="antigravity-bg" class="antigravity-container"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="highlight">Mes Stages & Expériences</h1>
+                <p>Découvrez mon parcours professionnel et les missions réalisées dans le cadre de ma formation
+                    d'ingénieur.</p>
+            </div>
+        </div>
+    </header>
+
+    <script type="module">
+        import Antigravity from './antigravity.js';
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('antigravity-bg');
+            if (container) {
+                new Antigravity(container, {
+                    count: 300,
+                    magnetRadius: 6,
+                    ringRadius: 7,
+                    waveSpeed: 0.4,
+                    waveAmplitude: 1,
+                    particleSize: 1.5,
+                    lerpSpeed: 0.05,
+                    color: "#5227FF",
+                    autoAnimate: true,
+                    particleVariance: 1,
+                    rotationSpeed: 0,
+                    depthFactor: 1,
+                    pulseSpeed: 3,
+                    particleShape: "capsule",
+                    fieldStrength: 10
+                });
+            }
+        });
+    </script>
+
+    <!-- Stages Section -->
+    <section id="stages-content" class="stages-section" style="padding: 60px 0;">
+        <div class="container">
+            <div class="timeline">
+
+                <!-- Stage 1: NOVEC -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Juil. 2025 - Sept. 2025</div>
+                    <div class="timeline-content card-glass">
+                        <h3>Stagiaire en Études AEP et Assainissement</h3>
+                        <div class="company-info">
+                            <i class="fas fa-building"></i> <strong>NOVEC</strong> &middot; Stage &middot; Salé, Maroc
+                        </div>
+                        <p>Participation à des études techniques liées aux réseaux d’Alimentation en Eau Potable (AEP)
+                            et d’Assainissement au sein du bureau d’études NOVEC.</p>
+                        <div class="tags">
+                            <span class="tag">QGIS</span>
+                            <span class="tag">AEP</span>
+                            <span class="tag">Assainissement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 2: IAV Hassan II (GIRE) -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Févr. 2025 - Mars 2025</div>
+                    <div class="timeline-content card-glass">
+                        <h3>S. Diagnostic des Périmètres Irrigués et GIRE</h3>
+                        <div class="company-info">
+                            <i class="fas fa-university"></i> <strong>IAV Hassan II</strong> &middot; Temps plein
+                            &middot; Hybride
+                        </div>
+                        <p>Analyse du mégaprojet de transfert d’eau entre les bassins du Sebou et du Bouregreg.</p>
+                        <ul class="experience-list">
+                            <li>💧 Étude des ressources hydriques et climatiques.</li>
+                            <li>Évaluation des infrastructures (stations de pompage, conduites).</li>
+                            <li>Suivi de la qualité de l’eau et impacts environnementaux.</li>
+                            <li>🔎 Étude de la pollution de l’Oued Sebou et solutions de dépollution.</li>
+                            <li>📈 Analyse des impacts socio-économiques et énergétiques.</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">Hydraulique</span>
+                            <span class="tag">Gestion de l'Eau</span>
+                            <span class="tag">Qualité de l'Eau</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 3: PhytoProd -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Déc. 2023</div>
+                    <div class="timeline-content card-glass">
+                        <h3>Stage d'Application en Exploitation Agricole</h3>
+                        <div class="company-info">
+                            <i class="fas fa-leaf"></i> <strong>PhytoProd S.A</strong> &middot; Stage &middot; Province
+                            de Taounate, Maroc
+                        </div>
+                        <p>Analyse approfondie du milieu naturel, du climat et de l'aménagement de l'exploitation
+                            agricole.</p>
+                        <div class="tags">
+                            <span class="tag">Agronomie</span>
+                            <span class="tag">Exploitation Agricole</span>
+                            <span class="tag">Impact Social</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 4: IAV Hassan II (Ruralisme) -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Juil. 2023</div>
+                    <div class="timeline-content card-glass">
+                        <h3>Stage "Le Ruralisme"</h3>
+                        <div class="company-info">
+                            <i class="fas fa-university"></i> <strong>IAV Hassan II</strong> &middot; Stage &middot;
+                            Béni Mellal-Khénifra, Maroc
+                        </div>
+                        <p>Immersion rurale dans la région de Khenifra pour collecter des données sur les activités
+                            agricoles et les enjeux communautaires. Sensibilisation au rôle vital de l'agriculture.</p>
+                        <div class="tags">
+                            <span class="tag">Ruralisme</span>
+                            <span class="tag">Enquêtes</span>
+                            <span class="tag">Agriculture Durable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 5: IAV Hassan II (Nature) -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Juil. 2022</div>
+                    <div class="timeline-content card-glass">
+                        <h3>Stage Découverte de la Nature</h3>
+                        <div class="company-info">
+                            <i class="fas fa-university"></i> <strong>IAV Hassan II</strong> &middot; Stage &middot;
+                            Azrou, Maroc
+                        </div>
+                        <p>Exploration des écosystèmes naturels et initiation aux disciplines de terrain.</p>
+                        <div class="tags">
+                            <span class="tag">Zoologie</span>
+                            <span class="tag">Géologie Structurale</span>
+                            <span class="tag">Observation Terrain</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Lassine Yarro</h2>
+                </div>
+                <p>Merci d'avoir visité mon site portfolio.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/lassine-yarro%F0%9F%91%B7%F0%9F%8F%BF%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%92%A7-357050259/"
+                        class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i
+                            class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="mailto:lassine.yarro@iav.ac.ma" class="social-link" aria-label="Email"><i
+                            class="fas fa-envelope" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Lassine Yarro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
